@@ -1,5 +1,7 @@
 export const myApp = document.getElementById("app");
 
+import { mainContainer } from "./module/homePage/welcomeToSing/welcomeToSingView.js";
+
 // build a header with nav
 import { buildHeader } from "./module/buildHeader/buildHeaderView.js";
 // buildHeader();
@@ -13,6 +15,7 @@ import { buildFooter } from "./module/buildFooter/buildFooterView.js";
 // buildFooter();
 
 export function buildHomePage() {
+  mainContainer.innerHTML = "";
   myApp.innerHTML = "";
   buildHeader();
   buildWelcomeToSing();

@@ -1,0 +1,67 @@
+
+@use "../../../../css/Global" as g;
+
+
+.artistsContainer{
+    padding: 2rem 4rem;
+    margin: 2rem 6rem;
+    color: white;
+    border-radius: 20px;
+    background-color: g.$grayColor;
+    header{
+        h2{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    .artist{
+        width: 800px;
+        margin: 1rem auto;
+    }
+    figure{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+
+
+.albumContainer{
+
+        display: flex;
+        flex-direction: column;
+    width: 800px;
+    margin: 1rem auto;
+    .album{
+        background-color: g.$bgColor;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-top: 1rem;
+        span{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        p:nth-child(2){
+            color: #fcfcfc;
+        }
+    }
+
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    figure{
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+    }
+}

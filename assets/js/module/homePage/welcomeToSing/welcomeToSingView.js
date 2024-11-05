@@ -4,6 +4,9 @@ import { buildTenSongs } from "../../tenSongs/tenSongsView/tenSongsView.js";
 export const toSing = document.createElement("section");
 toSing.classList.add("WelcomeToSing");
 
+export const mainContainer = document.createElement("section");
+mainContainer.classList.add("mainContainer");
+
 export function buildWelcomeToSing() {
   toSing.innerHTML = `
   <section class="WelcomeToSingHeader">
@@ -16,5 +19,6 @@ export function buildWelcomeToSing() {
   `;
 
   buildTenSongs();
-  myApp.appendChild(toSing);
+  myApp.appendChild(mainContainer);
+  mainContainer.appendChild(toSing);
 }

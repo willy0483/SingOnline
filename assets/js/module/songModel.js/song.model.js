@@ -6,7 +6,7 @@ export class songmodel {
       const { data, error } = await supabase
         .from("songs")
         // artists name and albums title so it not just the id
-        .select("*,artists (name),albums (title)");
+        .select("*,artist_id (name,id),albums_id (title)");
       if (error) {
         throw error;
       }

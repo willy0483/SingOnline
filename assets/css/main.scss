@@ -3,6 +3,8 @@
 @use "../js/module/buildHeader/buildHeaderView" as buildHeader;
 @use "../js/module/buildFooter/buildFooterView" as buildFooter;
 @use "./Global" as g;
+@use "../js/module/artists/buildArtists/buildArtistsView" as buildArtists;
+@use "../js/module/songs/songsView/buildSongsView" as buildSongs;
 
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Playfair+Display:wght@400..900&display=swap');
 
