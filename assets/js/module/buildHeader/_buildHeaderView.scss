@@ -1,0 +1,55 @@
+@use "../../../css/Global" as g;
+.header {
+    background-color: g.$grayColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    img {
+        display: block;
+        width: 80%;
+    }
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin: 0 1rem;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2rem;
+
+            }:hover{
+                color: g.$green;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 2rem;
+        img {
+            width: 100%;
+        }
+        ul {
+            background-color: g.$bgColor;
+            margin-bottom: 1rem;
+            width: 100%;
+            border: 1px white solid;
+            flex-direction: column;
+            li {
+                margin: 0.5rem 0;
+                a{
+                    padding: 0.2rem;
+                    display: block;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

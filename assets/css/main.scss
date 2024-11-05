@@ -1,0 +1,20 @@
+@use "../js/module/tenSongs/tenSongsView/tenSongsView" as tenSongs;
+@use "../js/module/homePage/welcomeToSing/welcomeToSingView" as welcomeToSing;
+@use "../js/module/buildHeader/buildHeaderView" as buildHeader;
+@use "../js/module/buildFooter/buildFooterView" as buildFooter;
+@use "./Global" as g;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Playfair+Display:wght@400..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: g.$bgColor;
+}
