@@ -1,0 +1,61 @@
+@use "../../../../css/Global" as g;
+
+.artistsPageContainer {
+  padding: 2rem 4rem;
+  margin: 2rem 6rem;
+  background-color: g.$grayColor;
+  border-radius: 20px;
+  color: white;
+  .artist-info {
+    color: white;
+    margin: auto;
+    max-width: 800px;
+    header {
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+    }
+    article {
+      text-align: center;
+    }
+    p {
+      margin: 1rem 0;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.artist-item {
+  figure {
+    position: relative;
+    padding: 1rem;
+    background-color: g.$bgColor;
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 20px;
+  }
+  img {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    aspect-ratio: 1/1;
+  }
+  footer {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    margin-right: 1rem;
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: g.$green;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+  }
+}

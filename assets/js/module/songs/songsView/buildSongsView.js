@@ -1,4 +1,6 @@
 import { mainContainer } from "../../homePage/welcomeToSing/welcomeToSingView.js";
+import { getArtists } from "../../artists/getArtists/getArtists.js";
+import { searchItem } from "../searchSongs/searchSongsController.js";
 
 export function buildSongsView(songs) {
   const filteredSongs = songs.slice(0, 5);
@@ -17,6 +19,11 @@ export function buildSongsView(songs) {
           </div>
       `;
     songsContainer.appendChild(songElement);
+
+    songElement.addEventListener("click", () => {
+      // console.log(`Song ID: ${song.id}`);
+      getArtists(song.artist_id.id);
+    });
   });
 
   mainContainer.innerHTML = "";
@@ -32,6 +39,13 @@ export function buildSongsView(songs) {
   image.src = "assets/images/Svg/svgSearchIcon.svg";
   const input = document.createElement("input");
   input.placeholder = "Type Keyword...";
+
+  input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      console.log("Enter key pressed");
+      searchItem(input.value);
+    }
+  });
 
   inputContainer.appendChild(image);
   inputContainer.appendChild(input);

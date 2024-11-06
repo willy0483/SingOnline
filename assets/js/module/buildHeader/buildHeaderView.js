@@ -1,6 +1,7 @@
 import { myApp } from "../../main.js";
 import { buildHomePage } from "../../main.js";
 import { getSongs } from "../songs/getSongs.js";
+import { getArtistsPage } from "../artistsPage/getArtistsPageData.js";
 
 export function buildHeader() {
   const header = document.createElement("header");
@@ -11,7 +12,7 @@ export function buildHeader() {
             <ul>
                 <li><a id="home-link" href="#">HOME</a></li>
                 <li><a id="song-click" href="#">SONGS</a></li>
-                <li><a href="#">ARTISTS</a></li>
+                <li><a id="artists-link" href="#">ARTISTS</a></li>
                 <li><a href="#">LOGIN</a></li>
             </ul>
         </nav>
@@ -29,5 +30,10 @@ export function buildHeader() {
   document.getElementById("song-click").addEventListener("click", (event) => {
     event.preventDefault();
     getSongs();
+  });
+
+  document.getElementById("artists-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    getArtistsPage();
   });
 }

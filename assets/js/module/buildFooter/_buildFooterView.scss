@@ -1,31 +1,33 @@
 @use "../../../css/Global" as g;
 
 .mainFooter {
-    background-color: g.$grayColor;
-    section {
-        display: flex;
-        justify-content: space-between;
-        color: #F5F5F5;
-        align-items: center;
-        margin: 0 4rem;
-    }
-    p:nth-child(2) {
-        color: g.$darkGreen;
-        font-size: 4rem;
-        font-family: "Anton SC", sans-serif;
-    }
+  background-color: g.$grayColor;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  section {
+    display: flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    align-items: center;
+    margin: 0 4rem;
+  }
+  p:nth-child(2) {
+    color: g.$darkGreen;
+    font-size: 4rem;
+    font-family: "Anton SC", sans-serif;
+  }
 }
 
 @media screen and (max-width: 1110px) {
-    .mainFooter {
-        section {
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-        p:nth-child(2) {
-            font-size: 2rem;
-        }
+  .mainFooter {
+    section {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
     }
-    
+    p:nth-child(2) {
+      font-size: 2rem;
+    }
+  }
 }
