@@ -65,3 +65,48 @@
         }
     }
 }
+
+
+@media (max-width: 764px) {
+    .artistsContainer{
+        padding: 1rem;
+        margin: 1rem;
+        header{
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+        .artist{
+            width: 400px;
+            text-align: center;
+        }
+        figure{
+            flex-direction: column;
+            img{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+    .albumContainer{
+        flex-direction: column;
+        width: 500px;
+        .album{
+            span{
+                font-size: 1rem;
+            }
+            p:nth-child(2){
+                font-size: 1rem;
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}
