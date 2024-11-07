@@ -216,6 +216,7 @@ html {
 
 .songs-container {
   color: white;
+  width: 100%;
 }
 .songs-container .song-info {
   background-color: #4DB039;
@@ -265,6 +266,23 @@ html {
   font-weight: bold;
 }
 
+@media (max-width: 764) {
+  .songs-main-container {
+    padding: 0;
+    margin: 0;
+    background-color: #232323;
+    border-radius: 20px;
+  }
+  .songs-container .song-info {
+    max-width: 300px;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .songs-description header {
+    font-size: 1.2rem;
+  }
+}
 .artistsPageContainer {
   padding: 2rem 4rem;
   margin: 2rem 6rem;
@@ -322,7 +340,7 @@ html {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 1110px) {
+@media (max-width: 764px) {
   .artistsPageContainer {
     padding: 1rem;
     margin: 1rem;

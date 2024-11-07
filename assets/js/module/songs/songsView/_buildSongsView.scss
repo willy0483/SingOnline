@@ -17,7 +17,7 @@
 
 .songs-container {
   color: white;
-
+  width: 100%;
   .song-info {
     background-color: g.$ligthGreen;
     display: inline-block;
@@ -65,5 +65,29 @@
 
   span {
     font-weight: bold;
+  }
+}
+
+
+@media (max-width: 764) {
+  .songs-main-container {
+    padding: 0;
+    margin: 0;
+    background-color: g.$grayColor;
+    border-radius: 20px;
+  }
+  .songs-container {
+    .song-info {
+     max-width: 300px;
+
+    }
+  }
+  .input-container {
+    width: 100%;
+  }
+  .songs-description {
+    header {
+      font-size: 1.2rem;
+    }
   }
 }
