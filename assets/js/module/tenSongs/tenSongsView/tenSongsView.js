@@ -2,6 +2,7 @@ import { getTenSongs } from "../getTenSongs/getTenSongs.js";
 import { toSing } from "../../homePage/welcomeToSing/welcomeToSingView.js";
 import { getArtists } from "../../artists/getArtists/getArtists.js";
 
+// Function to build ten songs section in the "To Sing" section of the home page
 export async function buildTenSongs() {
   const songs = await getTenSongs();
   console.log(songs);

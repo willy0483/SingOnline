@@ -1,6 +1,7 @@
 import { supabase } from "../../supabase/supabase.js";
 import { buildArtistsView } from "../buildArtists/buildArtistsView.js";
 
+// gets all artists from the database with the albums and songs
 export async function getArtists(id) {
   try {
     // console.log(id);

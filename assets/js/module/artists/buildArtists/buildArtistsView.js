@@ -1,5 +1,6 @@
 import { mainContainer } from "../../homePage/welcomeToSing/welcomeToSingView.js";
 
+// Function to build the artists view
 export async function buildArtistsView(artists) {
   console.log(artists);
   mainContainer.innerHTML = "";

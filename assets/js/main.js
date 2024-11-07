@@ -1,5 +1,6 @@
 export const myApp = document.getElementById("app");
 
+// build a main container
 import { mainContainer } from "./module/homePage/welcomeToSing/welcomeToSingView.js";
 
 // build a header with nav
@@ -14,6 +15,7 @@ import { buildWelcomeToSing } from "./module/homePage/welcomeToSing/welcomeToSin
 import { buildFooter } from "./module/buildFooter/buildFooterView.js";
 // buildFooter();
 
+// build a home page
 export function buildHomePage() {
   mainContainer.innerHTML = "";
   myApp.innerHTML = "";

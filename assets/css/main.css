@@ -308,6 +308,70 @@
   border-radius: 20px;
 }
 
+.loginContainer {
+  padding: 2rem 4rem;
+  margin: 2rem 6rem;
+  background-color: #232323;
+  border-radius: 20px;
+  color: white;
+}
+.loginContainer header {
+  font-size: 1.6rem;
+}
+.loginContainer article {
+  width: 900px;
+  margin: 0.8rem 0;
+}
+.loginContainer .userName {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loginContainer .userName input {
+  width: 200px;
+  padding: 0.4rem;
+  border-radius: 20px;
+  border: none;
+}
+.loginContainer .userName :focus {
+  outline: none;
+}
+.loginContainer .userPassword {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loginContainer .userPassword input {
+  width: 200px;
+  padding: 0.4rem;
+  border-radius: 20px;
+  border: none;
+}
+.loginContainer .userPassword :focus {
+  outline: none;
+}
+.loginContainer button {
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  color: white;
+  background-color: #4DB039;
+  border: none;
+  margin: 1rem 0;
+}
+.loginContainer :hover {
+  cursor: pointer;
+}
+.loginContainer .passwordNewuser {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.loginContainer .passwordNewuser a {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;

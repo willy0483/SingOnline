@@ -7,6 +7,7 @@ toSing.classList.add("WelcomeToSing");
 export const mainContainer = document.createElement("section");
 mainContainer.classList.add("mainContainer");
 
+// Create a welcome section to the homepage
 export function buildWelcomeToSing() {
   toSing.innerHTML = `
   <section class="WelcomeToSingHeader">

@@ -1,5 +1,6 @@
 import { supabase } from "../supabase/supabase.js";
 
+// gets all songs from the database with the artist and album name
 export class songmodel {
   async list() {
     try {

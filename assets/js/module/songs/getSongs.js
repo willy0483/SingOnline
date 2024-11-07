@@ -1,6 +1,7 @@
 import { supabase } from "../../module/supabase/supabase.js";
 import { buildSongsView } from "../songs/songsView/buildSongsView.js";
 
+// gets all songs from the database with the artist and album name
 export async function getSongs() {
   try {
     const { data: songs, error } = await supabase

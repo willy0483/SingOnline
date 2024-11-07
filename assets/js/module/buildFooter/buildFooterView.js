@@ -1,5 +1,6 @@
 import { myApp } from "../../main.js";
 
+// Function to build a footer
 export function buildFooter() {
   const footer = document.createElement("footer");
   footer.classList.add("mainFooter");

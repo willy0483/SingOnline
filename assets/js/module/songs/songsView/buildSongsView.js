@@ -2,6 +2,7 @@ import { mainContainer } from "../../homePage/welcomeToSing/welcomeToSingView.js
 import { getArtists } from "../../artists/getArtists/getArtists.js";
 import { searchItem } from "../searchSongs/searchSongsController.js";
 
+// build songs view
 export function buildSongsView(songs) {
   const filteredSongs = songs.slice(0, 5);
 

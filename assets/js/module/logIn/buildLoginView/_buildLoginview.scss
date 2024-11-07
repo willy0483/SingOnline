@@ -1,0 +1,66 @@
+@use "../../../../css/Global" as g;
+
+.loginContainer {
+    padding: 2rem 4rem;
+    margin: 2rem 6rem;
+    background-color: g.$grayColor;
+    border-radius: 20px;
+    color: white;
+    header{
+        font-size: 1.6rem;
+    }
+    article{
+        width: 900px;
+        margin: 0.8rem 0;
+    }
+    
+    .userName{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        input{
+            width: 200px;
+            padding: 0.4rem;
+            border-radius: 20px;
+            border: none;
+
+        }:focus{
+            outline: none;
+        }
+    }
+    .userPassword{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        input{
+            width: 200px;
+            padding: 0.4rem;
+            border-radius: 20px;
+            border: none;
+
+        }:focus{
+            outline: none;
+        }
+    }
+
+    button{
+        padding: 0.5rem 2rem;
+        border-radius: 20px;
+        color: white;
+        background-color: g.$green;
+        border: none;
+        margin: 1rem 0;
+    }:hover{
+        cursor: pointer;
+    }
+    .passwordNewuser{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        a{
+            color: white;
+        }
+    }
+  }

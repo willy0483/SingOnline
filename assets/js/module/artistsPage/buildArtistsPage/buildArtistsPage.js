@@ -1,6 +1,7 @@
 import { mainContainer } from "../../homePage/welcomeToSing/welcomeToSingView.js";
 import { getArtists } from "../../artists/getArtists/getArtists.js";
 
+// Function to build the artists page
 export function buildArtistsPage(artist) {
   mainContainer.innerHTML = "";
 
