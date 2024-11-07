@@ -1,0 +1,3 @@
+export const supabaseUrl = "https://oitasbrsfrvalgggdgxd.supabase.co";
+export const supabaseKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pdGFzYnJzZnJ2YWxnZ2dkZ3hkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzAyNzM2NzYsImV4cCI6MjA0NTg0OTY3Nn0.2c17HJ0t373R2VSh7bdQ5_KCQlrs2cOzAXdi9bqogts";
