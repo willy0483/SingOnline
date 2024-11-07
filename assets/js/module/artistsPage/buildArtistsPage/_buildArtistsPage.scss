@@ -59,3 +59,25 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1110px) {
+  .artistsPageContainer {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .artist-item {
+    figure {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-bottom: 2rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    footer{
+      bottom: 1.5rem;
+    }
+  }
+}

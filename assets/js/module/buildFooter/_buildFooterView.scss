@@ -1,10 +1,15 @@
 @use "../../../css/Global" as g;
 
+html{
+  position: relative;
+}
+
 .mainFooter {
   background-color: g.$grayColor;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  transform: translateY(100%);
   section {
     display: flex;
     justify-content: space-between;

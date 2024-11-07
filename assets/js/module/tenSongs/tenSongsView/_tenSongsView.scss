@@ -22,3 +22,15 @@
         cursor: pointer;
     }
 }
+
+
+@media(max-width: 768px) {
+    .tenSongsContainer {
+        grid-template-columns: 1fr;
+        .song{
+            width: 75%;
+            margin: auto;
+        }
+    }
+    
+}

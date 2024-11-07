@@ -23,6 +23,15 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .tenSongsContainer {
+    grid-template-columns: 1fr;
+  }
+  .tenSongsContainer .song {
+    width: 75%;
+    margin: auto;
+  }
+}
 .WelcomeToSing {
   background-color: #232323;
   padding: 1rem;
@@ -103,11 +112,16 @@
     width: 100%;
   }
 }
+html {
+  position: relative;
+}
+
 .mainFooter {
   background-color: #232323;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  transform: translateY(100%);
 }
 .mainFooter section {
   display: flex;
@@ -308,6 +322,24 @@
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1110px) {
+  .artistsPageContainer {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .artist-item figure {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  .artist-item img {
+    width: 100%;
+    height: auto;
+  }
+  .artist-item footer {
+    bottom: 1.5rem;
+  }
+}
 .loginContainer {
   padding: 2rem 4rem;
   margin: 2rem 6rem;
